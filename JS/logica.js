@@ -106,9 +106,9 @@ const citaNumero = document.querySelector('.cita-numero');
 let cantidad = citas.length;
 
 function citaRandom() {
-    let random = Math.floor(Math.random() * cantidad + 1);
+    let random = Math.floor(Math.random() * cantidad);
     citaTexto.textContent = citas[random];
-    citaNumero.textContent = random;
+    citaNumero.textContent = random + 1;
 }
 
 citaBoton.addEventListener('click', citaRandom);
