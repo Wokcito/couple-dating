@@ -1,33 +1,57 @@
 .header {
     display: flex;
-    justify-content: center;
+    align-items: center;
 
-    .titulo {
-        color: $color4;
-        font-family: $fuente1;
-        font-size: 24px;
-        text-transform: uppercase;
+    background-color: $color5;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.165);
 
-        margin: 30px 0;
+    &__nav {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
 
-        span {
-            border-bottom: 1px solid $color4;
+        width: 100%;
+
+        &-iconos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                text-decoration: none;
+                color: $color1;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                i {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &-titulo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: $fuente2;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $color0;
+
+            margin: 0;
+            padding: 0;
         }
     }
-}
 
-@media all and (min-width: 350px) {
-    .header {
-        .titulo {
-            font-size: 28px;
-        }
-    }
-}
 
-@media all and (min-width: 400px) {
-    .header {
-        .titulo {
-            font-size: 32px;
-        }
-    }
 }

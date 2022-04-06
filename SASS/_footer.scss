@@ -51,9 +51,13 @@
         justify-content: center;
         align-items: center;
 
-        font-size: 15px;
+        a {
+            // height: 15px;
+            line-height: 15px;
+        }
 
         i {
+            font-size: 15px;
             color: $color4;
         }
     }
@@ -70,7 +74,9 @@
         }
 
         &-iconos {
-            font-size: 18px;
+            i {
+                font-size: 18px;
+            }
         }
     }
 }
