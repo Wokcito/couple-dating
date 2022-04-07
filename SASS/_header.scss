@@ -56,3 +56,21 @@
 
 
 }
+
+@media all and (min-width: 350px) {
+    .header {
+        &__nav {
+            &-iconos {
+                a {
+                    i {
+                        font-size: 23px;
+                    }
+                }
+            }
+
+            &-titulo {
+                font-size: 25px;
+            }
+        }
+    }
+}
